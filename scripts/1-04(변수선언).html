@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>변수 선언(var, let, const)</title>
+</head>
+<body>
+    <script>
+        // var
+        var x1 = 5;
+        var y1 = 6;
+        var x1 = x1+y1;
+        console.log("x1 = "+x1);
+        console.log("y1 = "+y1);
+        console.log(x1+"+"+y1+"="+x1);
+
+        x1 = 20;                        // 재선언이 가능
+        z1 = x1 + y1;
+        console.log("x1 = "+x1);
+        console.log("y1 = "+y1);
+        console.log(x1+"+"+y1+"="+x1);
+
+        //let
+        let x2 = 5;
+        let y2 = 6;
+        let z2 = x2 + y2;
+        
+        //let x2 = 23;        // 원래 선언 되어있는 변수를 재선언 에러 발생(22)
+
+        //const
+        const PI = 3.14;        // 초기값을 무조건 지정해주어야 한다.
+        //PI = 3.31415;         // const는 값을 바꿀 수 없어 실행 시 에러 발생
+        //const PI = 3.14;      //  재선언 되지 않는다.
+
+    </script>
+</body>
+<html>

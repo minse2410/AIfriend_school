@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>데이터 타입(String, Number, Object, Array, Undefined)</title>
+</head>
+<body>
+    <script>
+        // String 문자열
+        let name1 = "박도연";
+        let name2 = "최지설";
+        //let str1 = "저의 이름은 "박도연" 입니다.";        // 에러 발생
+        //let str1 = "저의 이름은 '박도연' 입니다.";        // 방법 1
+        //let str1 = "저의 이름은 \'박도연\' 입니다.";      // 방법 2 : \만 넣으면 아무 변화 없음
+        let str1 = "저의 이름은 \\박도연\\ 입니다.";
+        console.log(str1);
+        
+        // Number 문자열
+
+
+        // Undfined
+        let u1 = 1;     // 숫자, undifined, 아무것도 입력하지 않을 수 있다. 
+        console.log(u1);
+
+        // Null
+        let n1 = null;
+        console.log(n1);
+
+        // Object
+        let person = {};
+        person.firstName = "박";
+        person.lastName = "도연";
+        person.Age = 18;
+
+        // Object 선언과 동시에 멤버변수 초기화
+        let person1 = {
+        person1:firstName = "박",
+        person1:lastName = "도연",
+        person2:Age = 18
+        };
+
+        let person3 = {};
+        person3["firstName"] = "손";
+        person3["lastName"] = "윤슬";
+        person3["Age"] = 30;
+        person3.email="parkdoyeon@gmail.com";
+
+        // 출력
+        // console.log(person.firstName); console.log(person.lastName); console.log(person.Age);
+        // console.log(person1.firstName); console.log(person1.lastName); console.log(person1.Age);
+        // console.log(person3.firstName); console.log(person3.lastName); console.log(person3.Age); console.log(person3.email);
+
+        // 배열 - Array (=Object)
+        let car = ["현대", "기아", "테슬라", "벤츠"];
+        for(i=0; i<car.length; i++){
+        console.log(car[i]);
+        }
+
+        let num = [0, 6, 1, 2, 0, 1];
+        for(i=0; i<num.length; i++){
+        console.log(num[i]);
+        }
+
+        let car1 = ["현대", 3, undefined, null];
+        for(i=0; i<car1.length; i++){
+        console.log(car1[i]);
+        }
+
+        let arr = [];
+        arr[0] = 1;
+        arr[1] = "박도연짱";
+        for(i=0; i<arr.length; i++){
+        console.log(arr[i]);
+        }
+        
+        // push 메서드를 이용하여 순차적으로 삽입 *****
+        let arr1 = [];
+        arr.push(1201);
+        arr.push("뿡뿡이");
+        console.log(arr1.push[1]);
+        document.write(arr1.push[1]);
+
+        // boolean 참/거짓
+        let adult = false;
+        let num1 = 5;
+        let num2 = 7;
+        console.log(num1>num2);         //False
+        console.log(num1<num2);         //True
+
+        // typeof : type이 무엇인지 알려준다.
+        console.log(typeof num);    
+        console.log(typeof adult);
+        console.log(typeof name1);
+        console.log(typeof person1);
+
+        
+    </script>
+</body>
+<html>

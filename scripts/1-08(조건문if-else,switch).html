@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>조건문 if-else, switch</title>
+</head>
+<body>
+    <script>
+        /*
+        var age = 12;
+        if(age>18){
+            console.log("당신은 성인입니다.");
+        }
+        else{
+            console.log("당신은 미성년자 입니다.");
+        }
+        */
+
+    var hour = 14;
+    if(hour<10){
+        console.log("굿모닝");
+    }
+    else if(hour<17){
+        console.log("굿애프터눈");
+    }
+    else if(hour < 17){
+        console.log("굿이브닝");
+    }
+    else{
+        console.log("굿나잇");
+    }
+
+    var age = 17;
+    var isAdult;
+
+    if(age>18){
+        isAdult = true;
+    }
+    else{
+        isAdult = false;
+    }
+
+    var age=17;
+    var isadult = false;
+    if(age>18){
+        isAdult=true;
+    }
+
+    var d = new Date();
+    var day = d.getDay();       // 월요일 0, 화요일1, 수요일2, 목요일3, 금요일4, 토요일5, 일요일6
+    // console.log(day);
+
+    var dayName=" ";
+
+    switch(day){                 // 정수
+        case 0:
+            dayName="월요일";
+            break;
+        case 1:
+            dayName="화요일";
+            break;
+        case 2:
+            dayName="수요일";
+            break;
+        case 3:
+            dayName="목요일";
+            break;
+        case 4:
+            dayName="금요일";
+            break;
+        case 5:
+            dayName="토요일";
+            break;
+        case 6:
+            dayName="일요일";
+            break;
+        default:
+            console.log("무슨 요일인가요?");
+    }
+
+    // swtich문을 if문으로 변환
+    if(day==0){
+        dayName = "일요일";
+    }
+    else if(day==1){
+        dayName = "화요일";
+    }
+    else if(day==2){
+        dayName = "수요일";
+    }
+    else if(day==3){
+        dayName = "목요일";
+    }
+    else if(day==4){
+        dayName = "금요일";
+    }
+    else if(day==5){
+        dayName = "토요일";
+    }
+    else if(day==6){
+        dayName = "일요일";
+    }
+
+    console.log("오늘은 "+dayName+"입니다.");
+    </script>
+</body>
+<html>

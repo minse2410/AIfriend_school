@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>nuntest 64비트 부동소수점</title>
+</head>
+<body>
+    <script>
+        let x = 0.1+0.3;
+        console.log(x);      // 0.4
+
+        console.log(1/2);    // 유한소스
+        console.log(2/3);    // 무한소수
+        console.log(3/4);    // 무한소수
+
+        console.log((0.2).toString(2));   // 0.2를 2진수로 표현 ****
+        console.log(parseInt(0.001100110011001100110011001100110011001100110011001101), 2);     // 2진수 > 10진수
+
+        // 부동소수점 연산 : 외부 라이브러리 활용 ****
+
+        console.log(number.MAX_SAFE_INTEGER);       // 최대 출력값 : ****
+        let x2 = 999999999999;
+        console.log(x2);    // 정상적으로 출력됨
+    </script>
+</body>
+<html>
